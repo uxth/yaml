@@ -18,5 +18,8 @@ spec:
       containers:
         - name: core-api-services
           image: nginx
+	  envFrom:
+          - secretRef:
+            name: mysecret
           ports:
             - containerPort: 80
