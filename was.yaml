@@ -19,6 +19,6 @@ spec:
           image: nginx
           envFrom:
           - secretRef:
-            name: mysecret
+              name: mysecret
           ports:
             - containerPort: 80
