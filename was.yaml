@@ -2,7 +2,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: release-manager
+  name: test 
   labels:
     app: web
 spec:
@@ -16,7 +16,7 @@ spec:
         app: web
     spec:
       containers:
-        - name: core-api-services
+        - name: nginx
           image: nginx
 	  envFrom:
           - secretRef:
